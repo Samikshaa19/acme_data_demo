@@ -9,6 +9,9 @@ models:
     columns:
       - name: customer_id
         description: "Unique identifier for the customer."
+        tests:
+          - not_null
+          - unique
 
       - name: customer_name
         description: "Name of the customer or account."
