@@ -3,4 +3,4 @@ select
     customer_name,
     industry,
     updated_at
-from {{ ref('stg_customers') }}
+from {{ source('salesforce', 'customers') }}
