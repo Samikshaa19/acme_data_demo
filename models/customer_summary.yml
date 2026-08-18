@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: customer_summary
+    description: >
+      Aggregated view of customers by industry, used for customer reporting.
+
+    columns:
+      - name: industry
+        description: "Industry category associated with customers."
+
+      - name: customer_count
+        description: "Number of customers within each industry."
